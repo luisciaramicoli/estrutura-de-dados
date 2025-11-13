@@ -25,25 +25,19 @@ char *ler_texto()
 
 int main() {
     double num1;
-    double num2;
-    
+   
     
     printf("Digite um numero: ");
     num1 = ler_num_decimal();
-    printf("Digite outro numero: ");
-    num2 = ler_num_decimal();
-
-   double soma =  num1 + num2;
-   double sub = num1 - num2;
-   double mult = num1 * num2;
-   double div = num1 / num2;
-
-
-    printf("%.2f + %.2f = %.2f\n",num1,num2, soma);
-    printf("%.2f - %.2f = %.2f\n",num1,num2, sub);
-    printf("%.2f * %.2f = %.2f\n",num1,num2, mult);
-    printf("%.2f / %.2f = %.2f\n",num1,num2, div);
-
     
+    if (num1 >0){
+        printf("%.2f é um número positivo",num1);
+    }else if (num1<0){
+        printf("%.2f é um número negativo",num1);
+    }else{
+        printf("%.2f é 0",num1);
+    }
+
+
     return 0;
 }

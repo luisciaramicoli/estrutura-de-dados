@@ -25,25 +25,27 @@ char *ler_texto()
 
 int main() {
     double num1;
-    double num2;
     
     
-    printf("Digite um numero: ");
+    printf("Digite um numero de 0 a 100: ");
     num1 = ler_num_decimal();
-    printf("Digite outro numero: ");
-    num2 = ler_num_decimal();
-
-   double soma =  num1 + num2;
-   double sub = num1 - num2;
-   double mult = num1 * num2;
-   double div = num1 / num2;
-
-
-    printf("%.2f + %.2f = %.2f\n",num1,num2, soma);
-    printf("%.2f - %.2f = %.2f\n",num1,num2, sub);
-    printf("%.2f * %.2f = %.2f\n",num1,num2, mult);
-    printf("%.2f / %.2f = %.2f\n",num1,num2, div);
-
+  
     
+    if (num1>=90){
+        printf("%.2f é A",num1);
+    }else if (num1 >= 80 && num1 >= 89){
+        printf("%.2f é B",num1);
+    }else if (num1 >= 70 && num1 >= 79){
+        printf("%.2f é C",num1);
+    }else if (num1 >= 60 && num1 >= 69){
+        printf("%.2f é D",num1);
+    }else if (num1 >= 50 && num1 >= 59){
+        printf("%.2f é E",num1);
+    }else{
+        printf("%.2f é F",num1);
+    }
+    
+
+
     return 0;
 }
